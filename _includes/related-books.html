@@ -1,11 +1,8 @@
 {% if page.backlinks.size > 0 %}
-{% assign noteBacklinks = page.backlinks | where: "category", "note" %}
-{% assign essayBacklinks = page.backlinks | where: "category", "essay" %}
-{% assign groupedBacklinks = noteBacklinks | concat: essayBacklinks %}
-{% assign backlinks = groupedBacklinks | sort: 'date' | reverse %}
+{% assign backlinks = page.backlinks | where: "category", "book" | sort %}
 
-    <div id="backlinks" style="font-size: 0.9em">
-        <h3>Related ideas</h3>
+    <div id="related-books" style="font-size: 0.9em">
+        <h3>Related books</h3>
         <div>
             {% for backlink in backlinks %}
             <div class="list-item">

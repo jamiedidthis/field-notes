@@ -1,21 +1,10 @@
 ---
 layout: page
-title: Notes
-permalink: /notes
+title: Books
+permalink: /books
 ---
 
-# Notes
-
-## Across the web
-
-{% assign bookTitles = site.data.books | map: "title" %}
-
-{% assign listOfNotes = site.notes | where: "category", "note" | where_in: bookTitles, "title", true | sort: "title" %}
-<div id="wiki">
-{% include list.html listType="outline" %}
-</div>
-
-## Book notes
+# Books
 
 {% assign bookList = site.data.books | sort: "date-completed" | reverse %}
 <div id="books">
@@ -35,7 +24,7 @@ permalink: /notes
 <style>
     #books ul {
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
       padding-left: 0;
       grid-gap: 2rem;
     }

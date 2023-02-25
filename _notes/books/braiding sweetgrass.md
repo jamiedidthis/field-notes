@@ -3,7 +3,7 @@ layout: book
 title: "Braiding Sweetgrass"
 date: 2022-03-06
 tag: [ indigenous studies, anthropology, linguistics ]
-category: note
+category: book
 ---
 
 ### Marrying rituals with the mundane

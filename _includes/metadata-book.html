@@ -16,12 +16,12 @@
             <div class="book-link"><a target=_blank href="{{ bookArray[2] }}">About</a></div>
             <div class="book-tags">
                 {% for tag in page.tag %}
-                    <span class="tag sans">{{ tag }}</span>
+                <a class="internal-link internal-link-unstyled" href="/tag/{{ tag | slugify }}"><button>{{ tag }}</button></a>
                 {% endfor %}
             </div>
             <div class="book-time">
                 <time datetime="{{ page.last_modified_at | date_to_xmlschema }}">
-                    <span>{% include icon-clock.html %} <span class="sans">Created</span> {{ page.date | date: "%-m/%-d/%y" }}</span>
+                    Created {{ page.date | date: "%-m/%-d/%y" }}
                 </time>
             </div>
         </div>
