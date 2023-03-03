@@ -1,6 +1,6 @@
 {% if page.backlinks.size > 0 %}
 {% assign noteBacklinks = page.backlinks | where: "category", "note" %}
-{% assign essayBacklinks = page.backlinks | where: "category", "essay" %}
+{% assign digestBacklinks = page.backlinks | where: "category", "digest" %}
 {% assign groupedBacklinks = noteBacklinks | concat: essayBacklinks %}
 {% assign backlinks = groupedBacklinks | sort: 'date' | reverse %}
 

@@ -10,9 +10,9 @@ Climate change scientists proposed use of this term at the start of the millenni
 > 
 > Moreover, the Anthropocene falsely universalizes these destructive agents as “the anthropos,” when the blame lies not with “humanity” as such but with its particularly ecocidal, white Euro-American, industrial-capitalist subspecies.
 > 
-> In fact, this very terminology might be preventing us from imagining worlds otherwise.[^1]
-
-[^1]: [[Mary-Jane Rubenstein]], [[Pantheologies]], pp. 128–129
+> In fact, this very terminology might be preventing us from imagining worlds otherwise. 
+> 
+> {% include cite.html cite="[[Mary-Jane Rubenstein]], [[Pantheologies]], pp. 128–129" %}
 
 The problem isn’t humanity as such, but the wealthy inhabitants of overdeveloped nations who have built their industrial worlds upon the desceration of others’ worlds. Hence there is increasing support for labeling it the “Capitalocene” over “Anthropocene.”[^2] “The anthropos, if there is such a thing, isn’t the problem.“[^3]
 

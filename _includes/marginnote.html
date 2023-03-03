@@ -1,0 +1,1 @@
+<label for="mn-{{ include.marginnoteID }}" class="margin-toggle">&#8853;</label><input type="checkbox" id="mn-{{ include.marginnoteID }}" class="margin-toggle"/><side class="marginnote">{{ include.marginnote }}  {% if include.marginnoteURL != null %} <a href="{{ include.marginnoteURL }}">visit</a>{% else %}{% endif %}</side>

@@ -6,84 +6,101 @@ permalink: /notes
 
 # Notes
 
-## Across the web
-
-{% assign bookTitles = site.data.books | map: "title" %}
-
-{% assign listOfNotes = site.notes | where: "category", "note" | where_in: bookTitles, "title", true | sort: "title" %}
-<div id="wiki">
-{% include list.html listType="outline" %}
-</div>
-
-## Book notes
-
-{% assign bookList = site.data.books | sort: "date-completed" | reverse %}
-<div id="books">
-  <ul>
-  {% for book in bookList %}
-    <li>
-      <a class="internal-link" href="{{ book.deeplink }}">
-        <img class="book-img" src="{{ book.img }}">
-        <div class="sans">{{ book.title }}</div>
-        <div class="mono">{{ book.author }}</div>
-      </a>
-    </li>
-  {% endfor %}
-  </ul>
-</div>
+{% assign listOfNotes = site.notes | where: "category", "note" | last_modified_date_sort: false %}
+<div class="container">
+    {% for note in listOfNotes %}
+        <div class="row">
+            <div class="grid-list-title">
+                <time datetime="{{ note.last_modified_at | date_to_xmlschema }}">
+                      <span>{{ note.last_modified_at | date: "%-m-%y " }}</span>
+                  </time>
+                  <a class="internal-link" href="{{ note.url }}">
+                    {{ note.title }}
+                </a>
+                
+            </div>
+            <div class="grid-list-metadata">
+              <div class="grid-list-time">
+                  
+              </div>
+            </div>
+        </div>
+    {% endfor %}
+  </div>
 
 <style>
-    #books ul {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      padding-left: 0;
-      grid-gap: 2rem;
-    }
+    @media (max-width: 600px) {
 
-    @media screen and (max-width: 760px) {
-      #books ul {
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 1rem;
-      }
-    }
+        h1 {
+            margin-left: auto;
+            text-align: center;
+        }
 
-    #books li {
-      list-style: none;
-      transition: all .2s ease-in-out; 
-    }
-
-    #books li:hover {
-        transform: scale(1.05);
-      }
-
-    #books li a {
-        border-bottom: none;
-        background-color: transparent;
-    }
-
-     #books img {
-      max-width: 400px;
-      width: 100%;
-    }
-
-    #books div {
-      line-height: 1.2;
-    }
-
-    @media screen and (max-width: 600px) {
-      h1 {
-          margin-left: auto;
-          text-align: center;
-      }
-
-      h2 {
-          text-align: center;
-      }
+        h2 {
+            text-align: center;
+        }
     }
 
     h2:first-of-type {
       margin-top: 3rem;
     }
 
+  time span {
+    margin-right: 0;
+  }
 
+  time {
+    margin: 0;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+    justify-content: space-between;
+  }
+
+  .grid-list-metadata {
+    display: flex;
+    min-width: 160px;
+  }
+
+
+  .grid-list-time {
+    min-width: 80px; 
+  }
+  
+  @media screen and (max-width: 800px) {
+    width: auto;
+  }
+  
+
+  @media screen and (max-width: 600px) {
+    .container {
+      width: 76%;
+      margin: 0 auto;
+      gap: 1rem 2rem;
+    }
+
+    .row {
+      justify-content: center;
+    }
+
+    .grid-list-metadata {
+      justify-content: center;
+      margin: 0.5rem 0;
+    }
+
+    .grid-list-title {
+      text-align: center;
+      line-height: 1.6;
+      width: 100%;
+    }
+
+    .grid-list-title a.internal-link {
+      font-size: 1.2rem;
+    }
+
+  }
 </style>

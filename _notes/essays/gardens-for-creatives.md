@@ -11,13 +11,15 @@ category: essay
 
 <span class="newthought">Most digital gardens follow</span> a particular structure. They collect information and ideas, usually with some mechanism for drawing connections between them, with the goal being to build out a personal library and generate new ideas over time. Traditionally, they're pretty intellectual -- personal Knowledge management systems with a capital K.
 
+sidenote
+
 Along this line, I originally started alisa.wtf with the intention of having two separate areas: an analytical space (<span class="newthought">aka</span> the garden) and a creative space (like a portfolio). But as I organized my content, the separation between these two types of content became less and less clear -- I was so drawn to the [ethos of digital gardens](https://maggieappleton.com/garden-history) that I couldn't keep it from spilling into the creative half of my site, and it was quickly growing into a hydra of mixed objectives and disorganization.
 
 I scrapped the distinction of analytical vs. creative work altogether and decided to reapproach the entire thing as a garden, since that's where my subconscious was trying to get me to go anyway.
 
 ### What counts as creative work, anyway? 
 
-I'm using *creative work* here in a way that basically means *everything except nonfiction essays*. For me, creative work usually includes taking & editing photos, making music, and drawing, but it could include any hobby.{% include sidenote.html sidenote="Creativity can also be a deeply spiritual or emotional experience for some people, but this essay focuses more on the casual pleasure of doing stuff that results in a new artifact or idea." %} My goal is to explore how we might use the tenets of a digital garden to grow non-essay projects that take the form of whatever we damn well feel like.
+I'm using *creative work* here in a way that basically means *everything except nonfiction essays*. For me, creative work usually includes taking & editing photos, making music, and drawing, but it could include any hobby.{% include sidenote.html sidenote="Creativity can also be a deeply spiritual or emotional experience for some people, but this essay focuses more on the casual pleasure of doing stuff that results in a new artifact or idea." %} My goal is to explore how we might use the tenets of a digital garden to grow non-essay projects that take the form of whatever we damn well feel like. 
 
 <hr>
 

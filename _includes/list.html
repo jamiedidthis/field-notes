@@ -28,7 +28,7 @@
                 {% endif %}
                 {% if include.listTime == true %}
                     <time datetime="{{ note.last_modified_at | date_to_xmlschema }}">
-                        <span><span class="iconify" data-icon="cil:pencil" style="color: #5c5c5c;" data-width="14"></span> {{ note.last_modified_at | date: "%-m/%-d" }}</span>
+                        <span>{{ note.last_modified_at | date: "%-m/%-d" }}</span>
                     </time>
                 {% endif %}
             </div>
