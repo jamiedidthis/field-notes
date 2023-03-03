@@ -1,7 +1,7 @@
 {% if page.backlinks.size > 0 %}
 {% assign noteBacklinks = page.backlinks | where: "category", "note" %}
 {% assign digestBacklinks = page.backlinks | where: "category", "digest" %}
-{% assign groupedBacklinks = noteBacklinks | concat: essayBacklinks %}
+{% assign groupedBacklinks = noteBacklinks | concat: digestBacklinks %}
 {% assign backlinks = groupedBacklinks | sort: 'date' | reverse %}
 
     <div id="backlinks" style="font-size: 0.9em">
