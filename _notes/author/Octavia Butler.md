@@ -1,5 +1,5 @@
 ---
-title: Ursula K. Le Guin
+title: Octavia Butler
 layout: meta
 category: author
 ---

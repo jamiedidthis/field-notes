@@ -9,8 +9,6 @@ growth: growth-3
 category: essay
 ---
 
-It is an obsidian plugin, that replaces your selected text.
-
 <span class="newthought">Digital gardens</span> are a philosophy of sharing content. It's similar to blogging, but instead of sharing isolated posts each time, you post unfinished ideas that you come back to, build on, connect, and eventually grow into more polished states. It emphasizes *doing* over *getting done*.
 
 **Imperfection** and **learning in public** are key tenets of the digital garden.{% include sidenote.html sidenote="As defined by Maggie Appleton in her ethos doc." sidenoteID="tenets" sidenoteURL="https://maggieappleton.com/garden-history" %} &nbsp;This buys us a couple of things: first, it's not only possible but encouraged to post and develop in-progress pieces. For someone like me -- who has eight open projects at any given moment and bounces between them on a whim -- that means it's easy to share all of them in a structured way without the pressure of completing them beforehand. 

@@ -241,7 +241,7 @@ p {
 
 a {
   transition: color 300ms;
-  padding: 0 0.05em;
+  padding: 0 0.02em;
   color: $color-primary;
   &:hover {
     color: darken($color-primary, 25%);
@@ -697,7 +697,6 @@ ul {
     display: inline-block; // exclusive from internal-link
     font-weight: 600; // exclusive from internal-link
     margin-right: 0.5em; // exclusive from internal-link
-    font-size: 1.1rem; // exclusive from internal-link
     transition: background 300ms;
     color: $color-text;
 
@@ -721,14 +720,26 @@ ul {
     border: none;
 
     &.list-link {
+      color: $color-text;
       background-color: transparent;
       padding: 0;
       display: block;
+
+      &:hover {
+        color: $color-primary;
+        background-color: transparent;
+      }
     }
   }
 
   .list-item {
     padding: 0.8rem 0;
+    font-size: 0.9em;
+  }
+
+  .list-item button {
+    font-size: 0.7rem;
+    padding: 0.15rem 0.35rem;
   }
 
   hr {
@@ -742,7 +753,7 @@ ul {
 }
 
 #backlinks, #related-books {
-  margin: 3rem 0;
+  margin: 1rem 0;
   border-top: 1px solid $color-border;
 
   a {
@@ -877,10 +888,6 @@ content > p, div.epigraph {
   }
 }
 
-.numeral {
-  font-family: et-book-roman-old-style;
-}
-
 input.margin-toggle {
   display: none;
 }
@@ -894,6 +901,30 @@ label {
   &.margin-toggle:not(.sidenote-number) {
     display: none;
   }
+}
+
+cite {
+  display: block;
+  margin: 10px 1em 1em 0;
+  font: 0.6875em/1.4 $font-secondary;
+  padding-top: 4px;
+  max-width: 460px;
+
+  @media screen and (min-width: 920px) {
+    left: 612px;
+  }
+
+  @media screen and (min-width: 740px) {
+    position: absolute;
+    top: -9px;
+    left: 522px;
+    border-top: 0;
+    max-width: 160px;
+  }
+
+  @media screen and (min-width: 650px) {
+      margin-left: 90px;
+    }
 }
 
 @media (max-width: 760px) {
@@ -921,30 +952,6 @@ label {
 
       p {
         width: 100%;
-      }
-
-      cite {
-        display: block;
-        margin: 10px 1em 1em 0;
-        font: 0.6875em/1.4 $font-secondary;
-        padding-top: 4px;
-        max-width: 460px;
-
-        @media screen and (min-width: 920px) {
-          left: 612px;
-        }
-
-        @media screen and (min-width: 740px) {
-          position: absolute;
-          top: -9px;
-          left: 522px;
-          border-top: 0;
-          max-width: 160px;
-        }
-
-        @media screen and (min-width: 650px) {
-            margin-left: 90px;
-          }
       }
 
       footer {

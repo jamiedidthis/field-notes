@@ -11,7 +11,7 @@
             <div class="list-item">
             <h4 class="backlink-title"><a class="internal-link list-link" href="{{ site.baseurl }}{{ backlink.url }}">{{ backlink.title }}</a></h4>
                     <a class="internal-link internal-link-unstyled" href="/{{ backlink.category }}s"><button>{{ backlink.category }}</button></a>
-                    <p style="font-size: 1em">{{ backlink.excerpt | strip_html | remove: "[" | remove: "]" | truncatewords: 28 }}</p>
+                    <p>{{ backlink.excerpt | strip_html | remove: "[" | remove: "]" | truncatewords: 28 }}</p>
             </div>
             {% endfor %}
         </div>
