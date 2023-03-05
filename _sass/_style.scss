@@ -16,6 +16,10 @@ $font-secondary: 'Source Code Pro', courier, monospace;
   color: $color-primary;
 }
 
+.color-subtext {
+  color: $color-subtext;
+}
+
 .sans {
   font-family: $font-secondary;
   letter-spacing: .03em;
@@ -126,6 +130,30 @@ body {
   margin-bottom: 2.4rem;
 }
 
+div.book-metadata {
+  p {
+    font-size: 0.8em;
+    line-height: 1.7em;
+    padding: 0;
+    margin: 0;
+  }
+
+  h1 {
+    font-style: italic;
+  }
+
+  h2 {
+    margin-top: 0;
+    padding-top: 0;
+    font-weight: 400;
+    font-style: italic;
+  }
+}
+
+div.book-tags {
+  width: fit-content;
+  margin: 15px 0 0 0;
+}
 
 time {
   display: inline-block;
@@ -280,9 +308,11 @@ a {
   &.internal-link-unstyled {
       background-color: transparent;
       border-bottom: none;
+      color: $color-text;
 
       &:hover {
         background-color: transparent;
+        color: $color-primary;
       }
   }
 }
@@ -304,7 +334,7 @@ button {
   padding: 0.25rem 0.5rem;
   font-size: 0.8rem;
   font-family: $font-secondary;
-  margin: 0 0.3rem 0 0;
+  margin: 0 0.3rem 0.5rem 0;
 
   &:hover {
     background-color: rgba($color-primary, 0.2);

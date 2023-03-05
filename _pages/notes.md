@@ -6,13 +6,13 @@ permalink: /notes
 
 # Notes
 
-{% assign listOfNotes = site.notes | where: "category", "note" | last_modified_date_sort: false %}
+{% assign listOfNotes = site.notes | where: "collection", "notes" | last_modified_date_sort: false %}
 <div class="container">
     {% for note in listOfNotes %}
         <div class="row">
             <div class="grid-list-title">
                 <time datetime="{{ note.last_modified_at | date_to_xmlschema }}">
-                      <span>{{ note.last_modified_at | date: "%-m-%y " }}</span>
+                      <span>{{ note.last_modified_at | date: "%-m-%y" }}</span>
                   </time>
                   <a class="internal-link" href="{{ note.url }}">
                     {{ note.title }}

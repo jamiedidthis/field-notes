@@ -3,9 +3,8 @@ layout: default
 ---
 
 <article>
-  {% include metadata-book.html layoutType="note" %}
+    {% include metadata-book.html layoutType="note" %}
   <div id="notes-entry-container">
-    <h2>Notes and reflections</h2>
     <content>
       {{ content }}
     </content>
@@ -17,7 +16,6 @@ layout: default
     </div>
   </div>
 </article>
-{% include link-previews.html wrapperQuerySelector="content" %}
 
 <style>
 
@@ -31,12 +29,6 @@ layout: default
 
     div.book-author {
         font-size: 0.8rem;
-    }
-
-    div.book-tags {
-        margin-left: 0;
-        margin-right: 0;
-        width: fit-content;
     }
 
    .flex-container {

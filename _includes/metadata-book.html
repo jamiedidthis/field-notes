@@ -1,14 +1,14 @@
 <div class="metadata">
     <div class="flex-container">
-        <img class="book-cover" src="{{ baseurl }}/assets/book-covers/{{ page.cover }}">
+        <img class="book-cover" src="/assets/book-covers/{{ page.cover }}" alt="book cover for {{ page.title }}">
         <div class="book-metadata">
             <h1>{{ page.title }}</h1> 
-            <div class="book-subtitle">{{ page.subtitle }}</div>
-            <div class="sans book-author"><a class="internal-link internal-link-unstyled" href="/author/{{ page.author | slugify }}">{{ page.author }}</a></div>
-            <div class="sans book-edition">Edition: Published {{ page.publish }} by <a class="internal-link internal-link-unstyled" href="/publisher/{{ page.publisher | slugify }}">{{ page.publisher }}</a>
-        {% if page.series %}
-            <div class="sans book-series">Series: <a class="internal-link internal-link-unstyled" href="/series/{{ page.series | slugify }}">{{ page.series }}</a>
-        {% endif %}
+            <h2 class="subtitle color-subtext">{{ page.subtitle }}</h2>
+            <div class="sans">
+                <p><a class="internal-link internal-link-unstyled" href="/authors/{{ page.author_slug }}">{{ page.author }}</a></p>
+                <p>Published {{ page.publish | date: "%Y" }} by <a class="internal-link internal-link-unstyled" href="/publishers/{{ page.publisher_slug }}">{{ page.publisher }}</a></p>
+                {% if page.series %}<p><a class="internal-link internal-link-unstyled" href="/series/{{ page.series_slug }}">{{ page.series }}</a> &num;{{ page.order }}</p>{% endif %}
+            </div>
             <div class="book-tags">
                 {% for tag in page.tag %}
                 <a class="internal-link internal-link-unstyled" href="/tag/{{ tag | slugify }}"><button>{{ tag }}</button></a>

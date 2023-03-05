@@ -6,53 +6,61 @@ permalink: /books
 
 # Books
 
-{% assign bookList = site.data.books | sort: "date-completed" | reverse %}
+{% assign bookList = site.books | where: "collection", "books" | last_modified_date_sort: false %}
 <div id="books">
-  <ul>
   {% for book in bookList %}
-    <li>
-      <a class="internal-link" href="{{ book.deeplink }}">
-        <img class="book-img" src="{{ book.img }}">
-        <div class="sans">{{ book.title }}</div>
-        <div class="mono">{{ book.author }}</div>
-      </a>
-    </li>
+    <div class="book-entry">
+      <div class="book-image">
+        <a class="internal-link" href="/books/{{ book.title | slugify }}"><img class="book-img" src="/assets/book-covers/{{ book.cover }}" alt="book cover for {{ page.title }}"></a>
+      </div>
+        <p><a class="internal-link internal-link-unstyled" href="/books/{{ book.title | slugify }}"><em>{{ book.title }}</em></a></p>
+        <p class="sans"><a class="internal-link internal-link-unstyled" href="/books/{{ book.author_slug }}">{{ book.author }}</a></p>
+    </div>
   {% endfor %}
-  </ul>
-</div>
+  </div>
 
 <style>
-    #books ul {
+    #books {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
       padding-left: 0;
       grid-gap: 2rem;
+      list-style-type: none;
     }
 
     @media screen and (max-width: 760px) {
-      #books ul {
+      #books {
         grid-template-columns: 1fr 1fr;
         grid-gap: 1rem;
       }
     }
 
-    #books li {
-      list-style: none;
-      transition: all .2s ease-in-out; 
+    #books p { 
+      font-size: 0.9em;
+      line-height: 1.2em;
+      margin: 5px 0 0 0;
+      padding: 0;
     }
 
-    #books li:hover {
-        transform: scale(1.05);
-      }
+    #books p.sans {
+      font-size: 0.7em;
+      line-height: 1em;
+    }
 
-    #books li a {
+    #books .book-entry a {
         border-bottom: none;
         background-color: transparent;
+        text-decoration: none;
+    }
+
+    div.book-image {
+
     }
 
      #books img {
       max-width: 400px;
-      width: 100%;
+      width:100%;
+      object-fit: cover;
     }
 
     #books div {
