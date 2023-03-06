@@ -45,6 +45,9 @@ collections:
   publishers:
     output: true
     permalink: publishers/:slug
+  digest:
+    output: true
+    permalink: digest/:slug
 
 defaults:
   - scope:
