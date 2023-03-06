@@ -14,7 +14,10 @@ Rhizome, from the ancient Greek: a mass of roots. In botany, it describes a plan
 
 In the modern western world, we have inherited an arborescent view of the world (tree-like, heirarchic). A seed or acorn takes root and grows into a tree; all subsequent Platonic philosophies are an outgrowth of Plato, etc.
 
-It turns out, that model is incorrect even for trees—forests are superorganisms with interconnections much like ant colonies. {% include sidenote.html sidenote="[[Peter Wohlleben]], [[The Hidden Life of Trees]], p.3" sidenoteID="hidden-life-of-trees" %} Beneath the soil, mycelium is ecological connective tissue, the living seam by which much of the world is stitched into relation. {% include sidenote.html sidenote="[[Merlin Sheldrake]], [[Entangled Life]], p. 46" sidenoteID="entangled-life" %}
+As [[Peter Wohlleben]] says: 
+As [[Ada Palmer]] says: 
+
+It turns out, that model is incorrect even for trees—forests are superorganisms with interconnections much like ant colonies. {% include sidenote.html sidenote="[[Peter Wohlleben]], [[The Hidden Life of Trees]], p. 3" sidenoteID="hidden-life-of-trees" %} Beneath the soil, mycelium is ecological connective tissue, the living seam by which much of the world is stitched into relation. {% include sidenote.html sidenote="[[Merlin Sheldrake]], [[Entangled Life]], p. 46" sidenoteID="entangled-life" %}
 
 Indigenous and eastern philosophies have a much better grasp of this interrelationality. An arborescent worldview means we think in heirarchies, binaries, and dualist categories. In rhizomatic thinking, there’s no clear start or end, just the ever-proliferating jungle with a life of its own.
 

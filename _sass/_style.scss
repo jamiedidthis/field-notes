@@ -10,7 +10,8 @@ $color-box-background: #FEFCF6;
 $border-radius: 8px;
 $box-shadow: 0 12px 12px rgba(105, 33, 69, 0.05), 0 4px 6px rgba(105, 33, 69, 0.05); // Also defined in link-preview
 $font-primary: 'Source Serif Pro', georgia, serif;
-$font-secondary: 'Source Code Pro', courier, monospace;
+$font-secondary: 'Work Sans', sans-serif;
+$font-mono: courier, monospace;
 
 .color-primary {
   color: $color-primary;
@@ -22,12 +23,10 @@ $font-secondary: 'Source Code Pro', courier, monospace;
 
 .sans {
   font-family: $font-secondary;
-  letter-spacing: .03em;
-  font-weight: 100;
 }
 
 .mono {
-  font-family: $font-secondary;
+  font-family: $font-mono
 }
 
 .grow {
@@ -870,13 +869,13 @@ code {
     vertical-align: baseline;
     position: relative;
 
-  @media only screen and (min-width: 761px) and (max-width: 1200px) {
+  @media only screen and (min-width: 761px) and (max-width: 1170px) {
     width: 35%;
     margin-right: -40%;
   }
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 1170px) {
   label.sidenote-number {
     color: $color-primary;
     font-weight: 600;
@@ -913,7 +912,7 @@ code {
 
 content > p, div.epigraph {
 
-  @media screen and (max-width: 760px) {
+  @media screen and (max-width: 1170px) {
     max-width: 100%;
   }
 }
@@ -957,7 +956,7 @@ cite {
     }
 }
 
-@media (max-width: 760px) {
+@media (max-width: 1170px) {
   body {
       width: 90%;
 
@@ -1046,7 +1045,8 @@ figure > img {
 }
 
 figcaption {
-  font-size: 1.1rem;
+  font-size: 0.8rem;
+  font-family: $font-secondary;
   text-align: center;
   color: mix($color-text, white, 80%);
   margin-top: 1rem;
