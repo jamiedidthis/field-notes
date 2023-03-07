@@ -3,7 +3,7 @@ layout: book
 category: books
 title: "The Good Ancestor"
 subtitle: "A Radical Prescription for Long-Term Thinking"
-written_by: "Roman Krznaric"
+author: "Roman Krznaric"
 publisher: "The Experiment"
 publish: 2020-11-03
 total: 336
@@ -14,7 +14,7 @@ tag:
  - "History + Culture"
  - "Liberation + Emergence"
  - "Nature + Cosmos"
-cover: good-ancestor.jpg
+cover: the-good-ancestor.jpg
 
 ---
 

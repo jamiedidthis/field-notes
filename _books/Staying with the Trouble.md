@@ -3,7 +3,7 @@ layout: book
 category: books
 title: "Staying with the Trouble"
 subtitle: "Making Kin in the Chthulucene"
-written_by: "Donna Haraway"
+author: "Donna Haraway"
 publisher: "Duke University Press"
 publish: 2016-08-25
 total: 304

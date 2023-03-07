@@ -3,7 +3,7 @@ layout: book
 category: books
 title: "Perhaps the Stars"
 subtitle: 
-written_by: "Ada Palmer"
+author: "Ada Palmer"
 publisher: "Tor"
 publish: 2021-11-02
 total: 854

@@ -3,7 +3,7 @@ layout: book
 category: books
 title: "The Left Hand of Darkness"
 subtitle: 
-written_by: "Ursula K. Le Guin"
+author: "Ursula K. Le Guin"
 publisher: "Penguin"
 publish: 2000-07-01
 total: 320
@@ -13,7 +13,7 @@ order:
 tag: 
  - "Sci-Fi + Futurism"
  - "Storytelling + Mythmaking"
-cover: left-hand-of-darkness.jpg
+cover: the-left-hand-of-darkness.jpg
 ---
 
 The David Mitchell foreword 

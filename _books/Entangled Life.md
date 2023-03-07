@@ -3,7 +3,7 @@ layout: book
 category: books
 title: "Entangled Life"
 subtitle: "How Fungi Make Our Worlds, Change Our Minds & Shape Our Futures"
-written_by: "Merlin Sheldrake"
+author: "Merlin Sheldrake"
 publisher: "Random House"
 publish: 2020-05-12
 total: 370

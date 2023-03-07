@@ -3,7 +3,7 @@ layout: book
 category: books
 title: "With Borges"
 subtitle: 
-written_by: "Alberto Manguel"
+author: "Alberto Manguel"
 publisher: "Telegram Books"
 publish: 2006-04-01
 total: 77

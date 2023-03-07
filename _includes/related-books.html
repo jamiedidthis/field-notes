@@ -1,18 +1,24 @@
-
-
-    <div id="related-books" style="font-size: 0.9em">
+{% assign related_books = page.links | where_exp: "item","item.href contains '/books/'" %}
+    {% if related_books.size > 0 %}
+    <div id="related-books">
         <h3>Related books</h3>
-        <div>
-
-            <ul>
-                {% for link in page.links %}
-                  <li>{{ link.title }} {{ link.cleaner_href }} {{ link.href }}</li>
-                {% endfor %}
-                </ul>
-            <div class="list-item">
-            <h4 class="backlink-title"><a class="internal-link list-link" href="{{ site.baseurl }}{{ backlink.url }}">{{ backlink.title }}</a></h4>
-                    <a class="internal-link internal-link-unstyled" href="/{{ backlink.category }}"><button>{{ backlink.category }}</button></a>
-                    <p style="font-size: 1em">{{ backlink.excerpt | strip_html | remove: "[" | remove: "]" | truncatewords: 28 }}</p>
-            </div>
+        <div id="books">
+        {% for link in related_books %}
+      <div class="book-entry">
+        <div class="book-image">
+          <a class="internal-link" href="{{ link.href }}"><img class="book-img" src="/assets/book-covers/{{ link.title | slugify }}.jpg" alt="book cover for {{ link.title }}"></a>
+        </div>
+          <p><a class="internal-link internal-link-unstyled" href="{{ link.href }}"><em>{{ link.title }}</em></a></p>
+          <p class="sans"><a class="internal-link internal-link-unstyled" href="/authors/{{ link.author | slugify }}">{{ link.author }}</a>{% if link.coauthor %}, <a class="internal-link internal-link-unstyled" href="/authors/{{ link.coauthor | slugify }}">{{ book.coauthor }}</a>{% endif %}</p>
+        </div>
+          {% endfor %}
         </div>
     </div>
+    {% endif %}
+
+    <style>
+        #books {
+            justify-content: left;
+            margin-top: 1em;
+        }
+    </style>

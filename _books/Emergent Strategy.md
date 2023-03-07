@@ -3,7 +3,7 @@ layout: book
 category: books
 title: "Emergent Strategy"
 subtitle: "Shaping Change, Changing Worlds"
-written_by: "adrienne maree brown"
+author: "adrienne maree brown"
 publisher: "AK Press"
 publish: 2017-03-17
 total: 210

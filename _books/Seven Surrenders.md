@@ -3,7 +3,7 @@ layout: book
 category: books
 title: "Seven Surrenders"
 subtitle: 
-written_by: "Ada Palmer"
+author: "Ada Palmer"
 publisher: "Tor"
 publish: 2017-03-07
 total: 400

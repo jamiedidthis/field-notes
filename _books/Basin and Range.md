@@ -3,7 +3,7 @@ layout: book
 category: books
 title: "Basin and Range"
 subtitle: 
-written_by: "John McPhee"
+author: "John McPhee"
 publisher: "Farrar, Straus and Giroux"
 publish: 1981-04-01
 total: 224

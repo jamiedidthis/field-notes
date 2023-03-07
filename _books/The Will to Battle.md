@@ -3,7 +3,7 @@ layout: book
 category: books
 title: "The Will to Battle"
 subtitle: 
-written_by: "Ada Palmer"
+author: "Ada Palmer"
 publisher: "Tor"
 publish: 2017-12-19
 total: 368
@@ -13,7 +13,7 @@ order: 3
 tag: 
  - "Sci-Fi + Futurism"
  - "Weirdness + Wonder"
-cover: will-to-battle.jpg
+cover: the-will-to-battle.jpg
 ---
 
 

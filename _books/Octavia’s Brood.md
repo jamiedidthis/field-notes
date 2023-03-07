@@ -3,7 +3,7 @@ layout: book
 category: books
 title: "Octavia’s Brood"
 subtitle: "Science Fiction Stories from Social Justice Movements"
-written_by: "adrienne maree brown"
+author: "adrienne maree brown"
 coauthor: "Walidah Imarisha"
 publisher: "AK Press"
 publish: 2015-03-15

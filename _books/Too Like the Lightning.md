@@ -3,7 +3,7 @@ layout: book
 category: books
 title: "Too Like the Lightning"
 subtitle: 
-written_by: "Ada Palmer"
+author: "Ada Palmer"
 publisher: "Tor"
 publish: 2016-05-10
 total: 433

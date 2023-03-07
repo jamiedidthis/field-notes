@@ -3,7 +3,7 @@ layout: book
 category: books
 title: "The Duchess War"
 subtitle: 
-written_by: "Courtney Milan"
+author: "Courtney Milan"
 publisher: "Courtney Milan Books"
 publish: 2012-12-07
 total: 300
@@ -13,7 +13,7 @@ order: 1
 tag: 
  - "Love + Pleasure"
  - "History + Culture"
-cover: duchess-war.jpg
+cover: the-duchess-war.jpg
 ---
 
 Finally I didn’t bounce off a Courtney Milan! Granted, the [Norfolk Southern disaster](https://perfectunion.us/ohio-railroad-disaster-explained/) had me in the mood to read about labor organizing, and that part worked for me better than the romance. 

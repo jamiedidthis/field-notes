@@ -4,7 +4,6 @@ layout: default
 
 <article>
 
-
     <h1>{% if page.collection == 'publishers' %}
         Published by {{ page.title }}
     {% elsif page.collection == 'series'  %}
@@ -13,7 +12,7 @@ layout: default
     Written by {{ page.title }}
     {% endif %}</h1> 
     <div id="notes-entry-container">
-        {% assign bookList = site.books | where_exp: "item", "item.publisher == page.title or item.written_by == page.title or item.coauthor == page.title or item.series == page.title" | sort: 'order' %}
+        {% assign bookList = site.books | where_exp: "item", "item.publisher == page.title or item.author == page.title or item.coauthor == page.title or item.series == page.title" | sort: 'order' %}
 <div id="books">
   {% for book in bookList %}
     <div class="book-entry">
@@ -21,7 +20,7 @@ layout: default
         <a class="internal-link" href="/books/{{ book.title | slugify }}"><img class="book-img" src="/assets/book-covers/{{ book.cover }}" alt="book cover for {{ page.title }}"></a>
       </div>
         <p>{% if page.collection == 'series' %}<span class="color-subtext">&num;{{ book.order }}</span> {% endif %}<a class="internal-link internal-link-unstyled" href="/books/{{ book.title | slugify }}"><em>{{ book.title }}</em></a></p>
-        <p class="sans"><a class="internal-link internal-link-unstyled" href="/books/{{ book.written_by | slugify }}">{{ book.written_by }}</a></p>
+        <p class="sans"><a class="internal-link internal-link-unstyled" href="/books/{{ book.author | slugify }}">{{ book.author }}</a>{% if book.coauthor %}, <a class="internal-link internal-link-unstyled" href="/authors/{{ book.coauthor | slugify }}">{{ book.coauthor }}</a>{% endif %}</p>
     </div>
   {% endfor %}
   </div>

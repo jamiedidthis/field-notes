@@ -16,7 +16,7 @@ It’s meant to all overlap in unexpected ways and spark surprises. There are li
         <a class="internal-link" href="/books/{{ book.title | slugify }}"><img class="book-img" src="/assets/book-covers/{{ book.cover }}" alt="book cover for {{ page.title }}"></a>
       </div>
         <p><a class="internal-link internal-link-unstyled" href="/books/{{ book.title | slugify }}"><em>{{ book.title }}</em></a></p>
-        <p class="sans"><a class="internal-link internal-link-unstyled" href="/authors/{{ book.written_by | slugify }}">{{ book.written_by }}</a>{% if book.coauthor %}, <a class="internal-link internal-link-unstyled" href="/authors/{{ book.coauthor | slugify }}">{{ book.coauthor }}</a>{% endif %}</p>
+        <p class="sans"><a class="internal-link internal-link-unstyled" href="/authors/{{ book.author | slugify }}">{{ book.author }}</a>{% if book.coauthor %}, <a class="internal-link internal-link-unstyled" href="/authors/{{ book.coauthor | slugify }}">{{ book.coauthor }}</a>{% endif %}</p>
     </div>
   {% endfor %}
   </div>

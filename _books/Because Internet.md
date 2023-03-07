@@ -3,7 +3,7 @@ layout: book
 category: books
 title: "Because Internet"
 subtitle: "Understanding the New Rules of Language"
-written_by: "Gretchen McCulloch"
+author: "Gretchen McCulloch"
 publisher: "Penguin"
 publish: 2019-07-23
 total: 338
