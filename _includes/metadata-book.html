@@ -1,3 +1,4 @@
+
 <div class="metadata">
     <div class="flex-container">
         <img class="book-cover" src="/assets/book-covers/{{ page.cover }}" alt="book cover for {{ page.title }}">
@@ -5,19 +6,14 @@
             <h1>{{ page.title }}</h1> 
             <h2 class="subtitle color-subtext">{{ page.subtitle }}</h2>
             <div class="sans">
-                <p><a class="internal-link internal-link-unstyled" href="/authors/{{ page.author_slug }}">{{ page.author }}</a></p>
-                <p>Published {{ page.publish | date: "%Y" }} by <a class="internal-link internal-link-unstyled" href="/publishers/{{ page.publisher_slug }}">{{ page.publisher }}</a></p>
-                {% if page.series %}<p><a class="internal-link internal-link-unstyled" href="/series/{{ page.series_slug }}">{{ page.series }}</a> &num;{{ page.order }}</p>{% endif %}
+                <p><a class="internal-link internal-link-unstyled" href="/authors/{{ page.written_by | slugify }}">{{ page.written_by }}</a>{% if page.coauthor %}, <a class="internal-link internal-link-unstyled" href="/authors/{{ page.coauthor | slugify }}">{{ page.coauthor }}</a>{% endif %}</p>
+                <p>Published {{ page.publish | date: "%Y" }} by <a class="internal-link internal-link-unstyled" href="/publishers/{{ page.publisher | slugify }}">{{ page.publisher }}</a></p>
+                {% if page.series %}<p><a class="internal-link internal-link-unstyled" href="/series/{{ page.series | slugify }}">{{ page.series }}</a> &num;{{ page.order }}</p>{% endif %}
             </div>
             <div class="book-tags">
                 {% for tag in page.tag %}
                 <a class="internal-link internal-link-unstyled" href="/tag/{{ tag | slugify }}"><button>{{ tag }}</button></a>
                 {% endfor %}
-            </div>
-            <div class="book-time">
-                <time datetime="{{ page.last_modified_at | date_to_xmlschema }}">
-                    Created {{ page.date | date: "%-m/%-d/%y" }}
-                </time>
             </div>
         </div>
     </div>

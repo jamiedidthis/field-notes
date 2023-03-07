@@ -1,5 +1,5 @@
 ---
 title: "Columbia University Press"
 layout: meta
-category: publisher
+category: publishers
 ---

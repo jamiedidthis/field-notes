@@ -3,15 +3,13 @@ layout: book
 category: books
 title: "{{title}}"
 subtitle: 
-author: ["{{author}}"]
-author_slug: 
+written_by: "{{author}}"
+coauthor:
 publisher: "{{publisher}}"
-publisher_slug: 
 publish: {{publishDate}}
 total: {{totalPage}}
 genre: {{category}}
 series:
-series_slug:
 order:
 tag: 
  - Words + Language

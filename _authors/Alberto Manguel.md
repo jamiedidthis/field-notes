@@ -1,5 +1,5 @@
 ---
 title: Alberto Manguel
 layout: meta
-category: author
+category: authors
 ---

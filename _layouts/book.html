@@ -23,10 +23,6 @@ layout: default
         max-width: 200px;
     }
 
-    div.book-link {
-        margin: 0.7rem 0 2.4rem;
-    }
-
     div.book-author {
         font-size: 0.8rem;
     }
@@ -43,41 +39,17 @@ layout: default
     }
 
     @media (max-width: 760px) {
-        .flex-container {
-            flex-direction: column;
-            align-items: center;
-            gap: 1.5rem;
+        div.book-metadata h1, div.book-metadata h2 {
+            font-size: 1.5em;
         }
-
-        
     }
 
-    @media (max-width: 400px) {
-        h1 {
-            text-align: center;
-            font-size: 2.4rem;
+    @media (max-width: 570px) {
+        div.book-metadata h1, div.book-metadata h2 {
+            font-size: 1em;
         }
-
-        div.book-link {
-            text-align: center;
-            margin-bottom: 1.5rem;
-        }
-
-        div.book-author {
-            text-align: center;
-        }
-
-        div.book-tags {
-            margin: 0 auto;
-        }
-
-        div.book-time {
-            width: fit-content;
-            margin: 0 auto;
-        }
-
-        time {
-            margin-top: 0.8em;
+        .flex-container {
+            gap: 1.2rem;
         }
     }
 

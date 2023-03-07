@@ -3,13 +3,12 @@ layout: book
 category: books
 title: "Seven Surrenders"
 subtitle: 
-author: "Ada Palmer"
+written_by: "Ada Palmer"
 publisher: "Tor"
 publish: 2017-03-07
 total: 400
 genre: Fiction
 series: "Terra Ignota"
-series_slug: terra-ignota
 order: 2
 tag: 
  - "Sci-Fi + Futurism"

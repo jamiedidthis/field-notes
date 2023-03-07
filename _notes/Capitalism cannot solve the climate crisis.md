@@ -1,7 +1,7 @@
 ---
 title: Capitalism cannot solve the climate crisis
-category: note
-tags:
+category: notes
+tag:
 ---
 
 Capitalism as an economic system cannot solve the climate crisis. Relying on production and consumption to “fix” the consequences of our production and consumption can only exacerbate the crisis. 

@@ -1,5 +1,5 @@
 ---
 title: A messy plurality
-category: note
-tags:
+category: notes
+tag:
 ---

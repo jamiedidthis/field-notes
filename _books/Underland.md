@@ -1,12 +1,10 @@
 ---
 layout: book
-category: book
+category: books
 title: "Underland"
 subtitle: "A Deep Time Journey"
-author: "Robert Macfarlane"
-author_slug: robert-macfarlane
+written_by: "Robert Macfarlane"
 publisher: "W. W. Norton & Company"
-publisher_slug: w-w-norton-company
 publish: 2019-06-04
 total: 496
 genre: Nature

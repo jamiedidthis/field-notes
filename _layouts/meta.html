@@ -3,21 +3,39 @@ layout: default
 ---
 
 <article>
-  {% include metadata-book.html layoutType="note" %}
-  <div id="notes-entry-container">
-    <h2>Notes and reflections</h2>
-    <content>
-      {{ content }}
-    </content>
-    <div class="bottom-nav">
-        {% include button.html buttonType="backToTop" %}{% include button.html buttonType="seeMoreCategory" bottomNav=true %}
+
+
+    <h1>{% if page.collection == 'publishers' %}
+        Published by {{ page.title }}
+    {% elsif page.collection == 'series'  %}
+      Books in <em>{{ page.title }}</em> series
+    {% else %}
+    Written by {{ page.title }}
+    {% endif %}</h1> 
+    <div id="notes-entry-container">
+        {% assign bookList = site.books | where_exp: "item", "item.publisher == page.title or item.written_by == page.title or item.coauthor == page.title or item.series == page.title" | sort: 'order' %}
+<div id="books">
+  {% for book in bookList %}
+    <div class="book-entry">
+      <div class="book-image">
+        <a class="internal-link" href="/books/{{ book.title | slugify }}"><img class="book-img" src="/assets/book-covers/{{ book.cover }}" alt="book cover for {{ page.title }}"></a>
+      </div>
+        <p>{% if page.collection == 'series' %}<span class="color-subtext">&num;{{ book.order }}</span> {% endif %}<a class="internal-link internal-link-unstyled" href="/books/{{ book.title | slugify }}"><em>{{ book.title }}</em></a></p>
+        <p class="sans"><a class="internal-link internal-link-unstyled" href="/books/{{ book.written_by | slugify }}">{{ book.written_by }}</a></p>
     </div>
-    <div class="shell">
-      {% include backlinks.html %}
-    </div>
+  {% endfor %}
   </div>
-</article>
-{% include link-previews.html wrapperQuerySelector="content" %}
+      <content>
+        {{ content }}
+      </content>
+    <div class="shell">
+        {% include backlinks.html %}
+      </div>
+  </div>
+  <div class="bottom-nav">
+    {% include button.html buttonType="backToTop" %}{% include button.html buttonType="seeMoreCategory" bottomNav=true %}
+</div>
+  </article>
 
 <style>
 

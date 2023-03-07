@@ -1,6 +1,6 @@
 ---
 title: Seasonal time
-category: note
-tags:
+category: notes
+tag:
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Robert Macfarlane
 layout: meta
-category: author
+category: authors
 ---
 

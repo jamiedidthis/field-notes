@@ -1,5 +1,5 @@
 ---
 title: "HarperCollins UK"
 layout: meta
-category: publisher
+category: publishers
 ---

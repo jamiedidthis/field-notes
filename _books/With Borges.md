@@ -3,10 +3,8 @@ layout: book
 category: books
 title: "With Borges"
 subtitle: 
-author: "Alberto Manguel"
-author_slug: alberto-manguel
+written_by: "Alberto Manguel"
 publisher: "Telegram Books"
-publisher_slug: telegram-books
 publish: 2006-04-01
 total: 77
 genre: Biography

@@ -1,7 +1,7 @@
 ---
 title: Chthulucene
-category: note
-tags:
+category: notes
+tag:
  - Sci-Fi + Futurism
  - Weirdness + Wonder
  - Liberation + Emergence 

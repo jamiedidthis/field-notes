@@ -1,6 +1,6 @@
 ---
 title: Donna Haraway
 layout: meta
-category: author
+category: authors
 ---
 

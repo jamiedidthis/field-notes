@@ -6,7 +6,7 @@
 {% when "backToJournal" %}
 <a href="journal" class="internal-link internal-link-unstyled"><button>&#8592; back to journal</button></a>
 {% when "seeMoreCategory" %}
-<a href="/{{ page.category }}s" class="internal-link internal-link-unstyled"><button>see more {{ page.category }}s &#8594;</button></a>
+<a href="/{{ page.category }}" class="internal-link internal-link-unstyled"><button>see more {{ page.category }} &#8594;</button></a>
 {% else %}
 <a href="/{{ include.destinationURL }}" class="internal-link internal-link-unstyled"><button>{{ include.buttonLabel }}</button></a>
 {% endcase %}

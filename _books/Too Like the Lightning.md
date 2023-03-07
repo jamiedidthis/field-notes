@@ -1,17 +1,14 @@
 ---
 layout: book
-category: book
+category: books
 title: "Too Like the Lightning"
 subtitle: 
-author: "Ada Palmer"
-author_slug: ada-palmer
+written_by: "Ada Palmer"
 publisher: "Tor"
-publisher_slug: tor
 publish: 2016-05-10
 total: 433
 genre: Fiction
 series: "Terra Ignota"
-series_slug: terra-ignota
 order: 1
 tag:
  - "Sci-Fi + Futurism"

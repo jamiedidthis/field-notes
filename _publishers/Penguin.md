@@ -1,5 +1,5 @@
 ---
 title: "Penguin"
 layout: meta
-category: publisher
+category: publishers
 ---

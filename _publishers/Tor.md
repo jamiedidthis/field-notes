@@ -1,5 +1,5 @@
 ---
 title: "Tor"
 layout: meta
-category: publisher
+category: publishers
 ---

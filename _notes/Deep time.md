@@ -1,7 +1,7 @@
 ---
 title: Deep time
-category: note
-tags:
+category: notes
+tag:
  - Nature + Cosmos
 ---
 

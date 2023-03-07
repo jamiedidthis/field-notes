@@ -1,5 +1,5 @@
 ---
-title: Replace
-category: note
-tags:
+title: REPLACE
+category: notes
+tag:
 ---

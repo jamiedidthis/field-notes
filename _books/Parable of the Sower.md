@@ -3,7 +3,7 @@ layout: book
 category: books
 title: "Parable of the Sower"
 subtitle: 
-author: "Octavia Butler"
+written_by: "Octavia Butler"
 publisher: "Seven Stories Press"
 publish: 2016-11-08
 total: 332

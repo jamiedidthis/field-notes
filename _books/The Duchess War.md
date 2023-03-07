@@ -3,10 +3,8 @@ layout: book
 category: books
 title: "The Duchess War"
 subtitle: 
-author: "Courtney Milan"
-author_slug: courtney-milan
+written_by: "Courtney Milan"
 publisher: "Courtney Milan Books"
-publisher_slug: courtney-milan-books
 publish: 2012-12-07
 total: 300
 genre: Fiction

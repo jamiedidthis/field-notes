@@ -1,5 +1,5 @@
 ---
 title: "Random House"
 layout: meta
-category: publisher
+category: publishers
 ---

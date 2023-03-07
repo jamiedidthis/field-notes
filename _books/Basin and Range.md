@@ -1,17 +1,14 @@
 ---
 layout: book
-category: book
+category: books
 title: "Basin and Range"
 subtitle: 
-author: "John McPhee"
-author_slug: john-mcphee
+written_by: "John McPhee"
 publisher: "Farrar, Straus and Giroux"
-publisher_slug: farrar-straus-and-giroux
 publish: 1981-04-01
 total: 224
 genre: Science
 series: "Annals of the Former World"
-series_slug: annals-of-the-former-world
 order: 1
 tag:
  - "Nature + Cosmos"

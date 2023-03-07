@@ -3,7 +3,7 @@ layout: book
 category: books
 title: "Sensoria"
 subtitle: "Thinkers for the Twenty-First Century"
-author: "McKenzie Wark"
+written_by: "McKenzie Wark"
 publisher: "Verso Books"
 publish: 2020-08-18
 total: 304

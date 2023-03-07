@@ -1,5 +1,5 @@
 ---
 title: "The Experiment"
 layout: meta
-category: publisher
+category: publishers
 ---

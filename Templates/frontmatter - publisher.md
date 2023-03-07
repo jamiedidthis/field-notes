@@ -1,5 +1,5 @@
 ---
 title: REPLACE
 layout: meta
-category: publisher
+category: publishers
 ---

@@ -1,7 +1,7 @@
 ---
 title: Anthropocene
-category: note
-tags:
+category: notes
+tag:
 ---
 
 Climate change scientists proposed use of this term at the start of the millennium and adopted it in 2016. There has been pushback, however, with anthropologists and philosophers claiming it limits the conversation and misplaces the blame, failing to account for the political and economic systems that drive our destructive practices.

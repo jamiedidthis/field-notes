@@ -1,7 +1,7 @@
 ---
 title: Time
-category: note
-tags:
+category: notes
+tag:
  - Words + Language
  - Nature + Cosmos
 ---

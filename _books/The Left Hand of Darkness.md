@@ -3,10 +3,8 @@ layout: book
 category: books
 title: "The Left Hand of Darkness"
 subtitle: 
-author: "Ursula K. Le Guin"
-author_slug: ursula-k-le-guin
+written_by: "Ursula K. Le Guin"
 publisher: "Penguin"
-publisher_slug: penguin
 publish: 2000-07-01
 total: 320
 genre: "Fiction"

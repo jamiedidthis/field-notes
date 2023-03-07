@@ -1,7 +1,7 @@
 ---
 title: Science fiction futures
-category: note
-tags:
+category: notes
+tag:
  - Sci-Fi + Futurism
  - Liberation + Emergence 
  - Storytelling + Mythmaking
@@ -27,7 +27,7 @@ Or as [[adrienne maree brown]] says, “showing Black and white people sitting a
 
 > And for those of us from communities with historic collective trauma, we must understand that each of us is already science fiction walking around on two legs. Our ancestors dreamed us up and then bent reality to create us.[^4]
 
-[^4]: [[adrienne maree brown]], [[Walidah Imarisha]], [[Octavia's Brood]]
+[^4]: [[adrienne maree brown]], [[Walidah Imarisha]], [[Octavia’s Brood]]
 
 Science fiction and fantasy are also the perfect genre to explore the “contaminations” of queerness and “monstrosity,” both of which will have to be part of a sustainable future. We want [[A messy plurality]], not [[Purity and supremacy go hand in hand|purity and supremacy]].
 

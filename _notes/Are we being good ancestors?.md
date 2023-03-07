@@ -1,7 +1,7 @@
 ---
 title: Are we being good ancestors?
-category: note
-tags:
+category: notes
+tag:
 ---
 
 Jonas Salk, the mid-20th-century virologist, coined the question-turned-maxim, “Are we being good ancestors?” He called it humanity’s greatest responsibility, and said that we are not only a product of evolution, but its instruments as well.

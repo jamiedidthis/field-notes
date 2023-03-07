@@ -1,5 +1,5 @@
 ---
 title: Ada Palmer
 layout: meta
-category: author
+category: authors
 ---

@@ -29,17 +29,6 @@ permalink: /notes
   </div>
 
 <style>
-    @media (max-width: 600px) {
-
-        h1 {
-            margin-left: auto;
-            text-align: center;
-        }
-
-        h2 {
-            text-align: center;
-        }
-    }
 
     h2:first-of-type {
       margin-top: 3rem;

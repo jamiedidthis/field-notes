@@ -1,5 +1,5 @@
 ---
 title: Gretchen McCulloch
 layout: meta
-category: author
+category: authors
 ---
