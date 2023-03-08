@@ -5,7 +5,6 @@ permalink: /notes
 pagination: 
   enabled: true
   per_page: 24
-  collection: notes
 ---
 
 # Notes
