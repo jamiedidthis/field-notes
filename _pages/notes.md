@@ -1,10 +1,7 @@
 ---
 layout: page
 title: Notes
-permalink: /notes
-pagination: 
-  enabled: true
-  per_page: 24
+permalink: /notes/
 ---
 
 # Notes

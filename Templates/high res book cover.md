@@ -1,6 +1,3 @@
----
----
-
 
 <%* 
 var file = app.workspace.getActiveFile()

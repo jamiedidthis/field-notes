@@ -12,7 +12,7 @@ Climate change scientists proposed use of this term at the start of the millenni
 > 
 > In fact, this very terminology might be preventing us from imagining worlds otherwise. 
 > 
-> {% include cite.html cite="[[Mary Jane Rubenstein]], [[Pantheologies]], pp. 128–129" %}
+> {% include cite.html cite="[[Mary-Jane Rubenstein]], [[Pantheologies]], pp. 128–129" %}
 
 The problem isn’t humanity as such, but the wealthy inhabitants of overdeveloped nations who have built their industrial worlds upon the desceration of others’ worlds. Hence there is increasing support for labeling it the “Capitalocene” over “Anthropocene.”[^2] “The anthropos, if there is such a thing, isn’t the problem.“[^3]
 
@@ -25,4 +25,4 @@ In [[Staying with the Trouble]], [[Donna Haraway]] proposes the “Chthulucene�
 > The unifinished Chthulucene must collect up the trash of the Anthropocene, the exterminism of the Capitalocene, and chipping and shredding like a mad gardener, make a much hotter [[compost]] pile for still possible pasts, presents, and futures.
 
 [^2]: Isabelle Stengers, Catastrophic Times
-[^3]: [[Mary Jane Rubenstein|Rubenstein]], [[Pantheologies]], p. 131
+[^3]: [[Mary-Jane Rubenstein|Rubenstein]], [[Pantheologies]], p. 131

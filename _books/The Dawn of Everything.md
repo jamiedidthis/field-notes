@@ -3,7 +3,8 @@ layout: book
 category: books
 title: "The Dawn of Everything"
 subtitle: "A New History of Humanity"
-author: "David Graeber and David Wengrow"
+author: "David Graeber"
+coauthor: "David Wengrow"
 publisher: "Farrar, Straus and Giroux"
 publish: 2021-11-09
 total: 692
@@ -16,5 +17,5 @@ tag:
 cover: the-dawn-of-everything.jpg
 
 ---
-[[David Graeber and David Wengrow]] 
-[[David Wengrow]]
+
+Reading nonfiction like fiction

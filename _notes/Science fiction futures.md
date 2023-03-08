@@ -33,4 +33,4 @@ Science fiction and fantasy are also the perfect genre to explore the “contami
 
 > The most consistent vision of such symbiogenetic re-worldings can be found in the work of Donna Haraway, who continually seeks ways to imagine “worlds we might yet live in” amid the techno-convulsions of late capitalism. Steadily refusing the twin temptations of pure beginning and total apocalypse (“the world has always been in the middle of things”), Haraway’s worlders are always already hybrid and contaminated: natural-cultural concatenations who affirm that “there can be an elsewhere, not as utopian fantasy or relativist escape, but an elsewhere born out of the hard (and sometimes joyful) work of getting on together in a [[kin group]].” [^5]
 
-[^5]: [[Mary Jane Rubenstein]], [[Pantheologies]], p. 135
+[^5]: [[Mary-Jane Rubenstein]], [[Pantheologies]], p. 135

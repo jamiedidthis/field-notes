@@ -1,5 +1,5 @@
 ---
-title: Mary Jane Rubenstein
+title: Robin Wall Kimmerer
 layout: meta
 category: authors
 ---

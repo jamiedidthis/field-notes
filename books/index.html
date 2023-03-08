@@ -7,14 +7,14 @@ pagination:
   collection: books
   sort_field: last_modified_date
   sort_reverse: false
-  permalink: '/books/:num'
+  per_page: 24
+  permalink: '/:num/'
 ---
 
 <h1>Library<span class="color-subtext">/Anti-library</span></h1>
 
 <p>It’s meant to all overlap in unexpected ways and spark surprises. There are links and annotations galore. So start with what piques your interest, there are no wrong paths to follow.</p>
 
-{% assign bookList = site.books | where: "collection", "books" | last_modified_date_sort: false %}
 <div id="books">
   {% for book in paginator.posts %}
     <div class="book-entry">
