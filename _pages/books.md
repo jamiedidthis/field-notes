@@ -2,6 +2,10 @@
 layout: page
 title: Books
 permalink: /books
+pagination: 
+  enabled: true
+  per_page: 12
+  collection: books
 ---
 
 # Library<span class="color-subtext">/Anti-library</span>

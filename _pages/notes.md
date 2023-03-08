@@ -2,6 +2,10 @@
 layout: page
 title: Notes
 permalink: /notes
+pagination: 
+  enabled: true
+  per_page: 24
+  collection: notes
 ---
 
 # Notes
@@ -46,7 +50,7 @@ permalink: /notes
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 2rem 0;
+    margin: 0.75rem 0;
     justify-content: space-between;
   }
 

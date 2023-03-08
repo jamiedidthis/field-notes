@@ -3,7 +3,7 @@ layout: book
 category: books
 title: "{{title}}"
 subtitle: 
-written_by: "{{author}}"
+author: "{{author}}"
 coauthor:
 publisher: "{{publisher}}"
 publish: {{publishDate}}

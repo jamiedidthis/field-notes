@@ -14,7 +14,7 @@ order:
 tag: 
  - "Sci-Fi + Futurism"
  - "Liberation + Emergence"
-cover: octavias-brood.jpg
+cover: octavia-s-brood.jpg
 ---
 
 
