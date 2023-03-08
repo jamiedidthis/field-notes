@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+<h1>{{ page.tag }}</h1>
+
+<ul>
+{% for page in site.tags[page.tag] %}
+  <li>
+    {{ page.date | date: "%B %d, %Y" }}: <a href="{{ page.url }}">{{ page.title }}</a>
+  </li>
+{% endfor %}
+</ul>
