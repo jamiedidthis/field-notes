@@ -6,7 +6,7 @@ permalink: /notes/
 
 # Notes
 
-{% assign listOfNotes = site.notes | where: "collection", "notes" | last_modified_date_sort: false %}
+{% assign listOfNotes = site.notes | where: "category", "notes" | last_modified_date_sort: false %}
 <div class="container">
     {% for note in listOfNotes %}
         <div class="row">

@@ -8,7 +8,8 @@ permalink: /authors
 
 <div class="container">
 <ul>
-  {% for author in site.authors %}
+{% assign authors = site.notes | where: "category", "authors" %}
+  {% for author in authors %}
     <li><a class="internal-link" href="/authors/{{ author.title | slugify }}">{{ author.title }}</a></li>
   {% endfor %}
 </ul>
@@ -28,11 +29,6 @@ ul {
   list-style: none; 
   padding-left: 0;
   margin: 0;
-}
-
-ul li { 
-  padding-left: 1em;
-  text-indent:-1em;
 }
 
 </style>

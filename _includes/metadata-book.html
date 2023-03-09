@@ -12,7 +12,7 @@
             </div>
             <div class="book-tags">
                 {% for tag in page.tag %}
-                <a class="internal-link internal-link-unstyled" href="/tag/{{ tag | slugify }}"><button>{{ tag }}</button></a>
+                <a class="internal-link internal-link-unstyled" href="/tags/{{ tag | slugify }}"><button>{{ tag }}</button></a>
                 {% endfor %}
             </div>
         </div>

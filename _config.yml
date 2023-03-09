@@ -34,21 +34,6 @@ collections:
   notes:
     output: true
     permalink: notes/:slug
-  books:
-    output: true
-    permalink: books/:slug
-  authors:
-    output: true
-    permalink: authors/:slug
-  series:
-    output: true
-    permalink: series/:slug
-  publishers:
-    output: true
-    permalink: publishers/:slug
-  digest:
-    output: true
-    permalink: digest/:slug
 
 defaults:
   - scope:

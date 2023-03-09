@@ -1,6 +1,7 @@
 ---
 layout: book
 category: books
+permalink: /books/:slug
 title: "{{title}}"
 subtitle: ""
 author: "{{author}}"
