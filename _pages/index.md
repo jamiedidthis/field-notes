@@ -3,8 +3,6 @@ layout: page
 title: Home
 id: home
 permalink: /
-pagination:
-  enabled: true
 ---
 
 <br>
