@@ -5,71 +5,43 @@ id: home
 permalink: /
 ---
 
-<br>
-<br>
-<img src="/assets/visuals/index/flowers.png">
+## Hello! I read [[books]], I write [[notes]], and here is where I collect, connect, and cross-pollinate their ideas.
 
-# {{ site.title }} is a <span class="block">digital garden<span>.
+<hr>
+  <div class="library">
+  <h3><a class="internal-link" href="/books">Library &#8594;</a></h3>
+  {% assign booklist = site.notes | where: "category", "books" | last_modified_date_sort: false %}
+<div id="books">
+    {% for book in booklist limit:4 %}
+      <div class="book-entry">
+        <div class="book-image">
+          <a class="internal-link" href="/books/{{ book.title | slugify }}"><img class="book-img" src="/assets/book-covers/{{ book.cover }}" alt="book cover for {{ page.title }}"></a>
+        </div>
+          <p><a class="internal-link internal-link-unstyled" href="/books/{{ book.title | slugify }}"><em>{{ book.title }}</em></a></p>
+          <p class="sans"><a class="internal-link internal-link-unstyled" href="/authors/{{ book.author | slugify }}">{{ book.author }}</a>{% if book.coauthor %}, <a class="internal-link internal-link-unstyled" href="/authors/{{ book.coauthor | slugify }}">{{ book.coauthor }}</a>{% endif %}</p>
+      </div>
+    {% endfor %}
+    </div>
+  </div>
 
-## a [[digital garden]] is a space for thinking through, <span class="block-desktop">building upon, and coming back to.</span>
+  <hr>
 
-<!-- {% include button.html buttonLabel="See latest &#8594;" destinationURL="changelog" %} -->
+<h3><a class="internal-link" href="/notes">Notes &#8594;</a></h3>
 
+<h3><a class="internal-link" href="/Tags">Tags &#8594;</a></h3>
+
+{% include button.html buttonLabel="See latest &#8594;" destinationURL="changelog" %}
 
 <style>
 
-  h1 {
-    text-align: center;
-    font-size: 4rem;
-    line-height: 3.6rem;
-    margin-top: 0.5rem;
+  h3 {
+    margin-top: 0;
   }
 
-  h2 {
-    text-align: center;
-    font-size: 1.35rem;
-    font-weight: 400;
+  h3 .internal-link {
+    text-decoration: none;
   }
 
-  .block {
-    display: inline-block;
+  #backlinks {
+    border-top: 0;
   }
-
-  .block-desktop {
-    display: inline-block;
-  }
-
-  img {
-    box-shadow: none;
-    max-width: 142px;
-    display: block;
-    margin: 0 auto;
-  }
-
-  p {
-    margin: 0 auto;
-  }
-
-  button {
-    display: block;
-    margin: 0 auto;
-  }
-
-  @media screen and (max-width: 600px) {
-    h1 {
-      font-size: 3rem;
-      line-height: 2.8rem;
-    }
-
-    h2 {
-      font-size: 1.3rem;
-      min-width: 80%;
-      margin: 1.8rem auto;
-    }
-
-    .block-desktop {
-      display: inline;
-    }
-  }
-
-</style>

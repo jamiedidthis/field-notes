@@ -3,7 +3,7 @@
     <div>
         {% for link in linklist %}
         <div class="list-item">
-        <h4 class="backlink-title"><a class="internal-link list-link" href="{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a></h4>
+        <h4 class="backlink-title"><a class="internal-link" href="{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a></h4>
                 <a class="internal-link internal-link-unstyled" href="/{{ link.category }}"><button>{{ link.category }}</button></a>
                 <p>{{ link.excerpt | strip_html | remove: "[" | remove: "]" | truncatewords: 24 }}</p>
         </div>

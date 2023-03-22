@@ -7,10 +7,13 @@ layout: default
     <h1>{% if page.categories contains 'publishers' %}
         Published by {{ page.title }}
     {% elsif page.categories contains 'series' %}
-      Books in <em>{{ page.title }}</em> series
+      <em>{{ page.title }}</em> series
     {% else %}
-    Written by {{ page.title }}
+    {{ page.title }}
     {% endif %}</h1> 
+    <content>
+        {{ content }}
+      </content>
     <div id="notes-entry-container">
         {% assign bookList = site.notes | where_exp: "item", "item.publisher == page.title or item.author == page.title or item.coauthor == page.title or item.series == page.title" | sort: 'order' %}
 <div id="books">
@@ -24,9 +27,6 @@ layout: default
     </div>
   {% endfor %}
   </div>
-      <content>
-        {{ content }}
-      </content>
     <div class="shell">
         {% include backlinks.html %}
       </div>

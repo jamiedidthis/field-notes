@@ -9,8 +9,8 @@ $color-dirt: #ae4c13;
 $color-box-background: #FEFCF6;
 $border-radius: 8px;
 $box-shadow: 0 12px 12px rgba(105, 33, 69, 0.05), 0 4px 6px rgba(105, 33, 69, 0.05); // Also defined in link-preview
-$font-primary: 'Source Serif Pro', georgia, serif;
-$font-secondary: 'Work Sans', sans-serif;
+$font-primary: 'Source Serif Pro', "Hiragino Sans GB", "Microsoft YaHei","WenQuanYi Micro Hei", georgia, serif;
+$font-secondary: 'Work Sans', "Hiragino Sans GB", "Microsoft YaHei","WenQuanYi Micro Hei", sans-serif;
 $font-mono: courier, monospace;
 
 .color-primary {
@@ -62,7 +62,7 @@ body {
     max-width: 700px;
   }
 
-  @media only screen and (min-width: 761px) and (max-width: 1200px) {
+  @media (max-width: 1170px) {
     width: 90%;
   }
 
@@ -183,17 +183,6 @@ img {
   }
 }
 
-blockquote {
-  border-left: $color-primary 2px solid;
-  margin-inline-start: 1rem;
-  padding-left: 1rem;
-
-  footer {
-    font-size: 1.1rem;
-    text-align: right;
-  }
-}
-
 hr {
   border: 0px;
   border-top: 1px solid $color-border;
@@ -205,7 +194,8 @@ hr {
 content + hr {
   width: 100%;
   max-width: 829px;
-  margin: 5em 0 0;
+  margin: 2em 0 0;
+  border-color: transparent;
 }
 
 h1,
@@ -220,14 +210,14 @@ h6 {
 }
 
 h1 {
-  font-size: 2rem;
-  font-weight: 600;
+  font-size: 1.8rem;
+  font-weight: 400;
 }
 
 h2 {
   font-size: 1.5rem;
   margin-top: 2.4rem;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 h3 {
@@ -297,6 +287,7 @@ a {
       background-color: transparent;
       border-bottom: none;
       color: $color-text;
+      text-decoration: none;
 
       &:hover {
         background-color: transparent;
@@ -307,7 +298,7 @@ a {
 
 ul, ol {
   li::marker {
-    color: rgba($color-text, 0.5);
+    color: $color-primary;
     font-weight: bold;
     list-style-type: circle;
   }
@@ -357,14 +348,14 @@ footer {
       width: 100%;
 
       ul {
-        float: left;
+        float: right;
         display: flex;
         justify-content: space-between;
         padding-left: 0;
       }
 
       li {
-        padding: 0 1.5em 0 0;
+        padding: 0 0 0 1.5em;
         font-size: 0.75em;
         list-style: none;
         text-transform: lowercase;
@@ -383,7 +374,7 @@ nav, footer {
       border-bottom: none;
       color: $color-text;
       background-color: transparent;
-      font-weight: 800;
+      font-weight: 700;
       text-decoration: none;
       &:hover {
         border: none;
@@ -713,15 +704,10 @@ ul {
     width: fit-content; // exclusive from internal-link
     margin: 0; // exclusive from internal-link
     display: inline-block; // exclusive from internal-link
-    font-weight: 600; // exclusive from internal-link
+    font-weight: 400; // exclusive from internal-link
     margin-right: 0.5em; // exclusive from internal-link
     transition: background 300ms;
-    color: $color-text;
-
-    &:hover {
-      color: $color-text !important;
-      background-color: rgba($color-primary, 0.2);
-    }
+    font-size: 0.9em;
   }
 
   time {
@@ -732,17 +718,19 @@ ul {
     margin: 0;
     line-height: 1.4;
     float: clear;
+    font-size: 0.92em;
   }
 
   a {
     border: none;
 
     &.list-link {
-      color: $color-text;
+      color: $color-primary;
       background-color: transparent;
       padding: 0;
       display: block;
       font-size: 1.1em;
+      text-decoration: none;
 
       &:hover {
         color: $color-primary;
@@ -752,7 +740,7 @@ ul {
   }
 
   .list-item {
-    padding: 0.8rem 0;
+    padding: 0.5rem 0;
   }
 
   .list-item button {
@@ -771,14 +759,8 @@ ul {
 }
 
 #backlinks, #related-books {
-  margin: 1rem 0;
+  margin: 2em 0 0 0;
   border-top: 1px solid $color-border;
-
-  a {
-    .list-item {
-      border-bottom: none;
-    }
-  }
 }
 
 code {
@@ -848,7 +830,7 @@ code {
 .marginnote {
     float: right;
     clear: right;
-    margin-right: -35%;
+    margin-right: -34.5%;
     width: 30%;
     margin-top: 0.3rem;
     margin-bottom: 0;
@@ -859,15 +841,15 @@ code {
     position: relative;
 
   @media only screen and (min-width: 761px) and (max-width: 1170px) {
-    width: 35%;
-    margin-right: -40%;
+    width: 20%;
+    margin-right: -24.5%;
   }
 }
 
-@media screen and (max-width: 1170px) {
+@media screen and (max-width: 1041px) {
   label.sidenote-number {
     color: $color-primary;
-    font-weight: 600;
+    font-weight: 700;
   }
 }
 
@@ -921,52 +903,10 @@ label {
   }
 }
 
-cite {
-	display: block;
-	margin: 10px 1em 1em 0;
-	font: 0.6875em/1.4 dejarip, Verdana, sans-serif;
-	padding-top: 4px;
-	max-width: 460px
-}
-
-cite a,
-cite a:link {
-	text-decoration: none;
-}
-
-@media screen and (min-width: 650px) {
-	article cite {
-		margin-left: 90px
-	}
-}
-
-@media screen and (min-width: 740px) {
-	article cite {
-		position: absolute;
-		top: -9px;
-		left: 522px;
-		border-top: 0;
-		max-width: 160px
-	}
-}
-
-@media screen and (min-width: 920px) {
-	article cite {
-		left: 612px
-	}
-}
 
 
-
-@media (max-width: 1170px) {
-  body {
-      width: 90%;
-
-      &.photoessay {
-        padding: 0;
-      }
-  }
-
+@media screen and (max-width: 1040px) {
+  
   figure {
       max-width: 90%;
   }
@@ -975,19 +915,6 @@ cite a:link {
   figure.fullwidth figcaption {
       margin-right: 0%;
       max-width: none;
-  }
-
-  blockquote {
-      margin-left: 1.5em;
-      margin-right: 0em;
-
-      p {
-        width: 100%;
-      }
-
-      footer {
-        width: 100%;
-      }
   }
 
   label.margin-toggle:not(.sidenote-number) {
@@ -1022,6 +949,50 @@ cite a:link {
   img {
       width: 100%;
   }
+}
+
+// Blockquote and citations
+
+blockquote {
+	margin: 0 20px 20px 20px;
+  border-left: $color-primary 2px solid;
+  margin-inline-start: 1rem;
+  padding-left: 1rem;
+}
+
+blockquote p {
+	margin: 1em 0;
+}
+
+cite {
+	display: block;
+	margin: 1em 0;
+	font: 0.8rem/1.4 $font-secondary;
+  color: rgba($color-text, 0.6);
+}
+
+cite a,
+cite a:link {
+	text-decoration: none
+}
+
+@media screen and (min-width: 1041px) {
+	article blockquote {
+		position: relative
+	}
+  article cite {
+		position: absolute;
+		top: -9px;
+		left: 712px;
+		border-top: 0;
+    width: 20%;
+	}
+}
+
+@media screen and (min-width: 1170px) {
+  article cite {
+    width: 30%;
+	}
 }
 
 // Figure 

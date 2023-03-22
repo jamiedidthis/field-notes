@@ -9,7 +9,7 @@ permalink: /publishers
 <div class="container">
 <ul>
   {% assign publishers = site.notes | where: "category", "publishers" %}
-  {% for author in authors %}
+  {% for publisher in publishers %}
     <li><a class="internal-link" href="/publishers/{{ publisher.title | slugify }}">{{ publisher.title }}</a></li>
   {% endfor %}
 </ul>

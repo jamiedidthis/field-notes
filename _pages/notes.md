@@ -17,11 +17,9 @@ permalink: /notes/
                   <a class="internal-link" href="{{ note.url }}">
                     {{ note.title }}
                 </a>
-                
             </div>
             <div class="grid-list-metadata">
               <div class="grid-list-time">
-                  
               </div>
             </div>
         </div>
