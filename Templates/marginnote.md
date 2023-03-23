@@ -1,0 +1,1 @@
+{% include marginnote.html marginnote="REPLACE" marginnoteID="REPLACE" %}
